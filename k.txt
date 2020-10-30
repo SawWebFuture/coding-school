@@ -1,1 +1,3 @@
 3cfa5e87803a90afd2173f5b592bfbac5521989c
+
+vscode://vscode.github-authentication/did-authenticate?windowid=1&code=0ea02c76b78e6c2854de&state=8c4a539c-f582-4f8c-a162-8e6d7aa087b2
