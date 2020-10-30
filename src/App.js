@@ -24,7 +24,7 @@ function App() {
             <h1 className="font-bold text-2x1">This is the home page</h1>
           </Route>
           <Route path="/about">
-            <h1 className="font-bold text-2x1">About Page</h1>
+            <h1 className="font-bold text-2x1">About Page - Page</h1>
           </Route>
         </Switch>
 
