@@ -1,13 +1,14 @@
-import OpenEyes from './Components/OpenEyes';
-import CounterExample from './Components/CounterExample';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom"
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Home from './Views/Home'
+import About from './Views/About'
+import Product from './Views/Product'
 
 function App() {
   return (
@@ -17,16 +18,20 @@ function App() {
     <Router>
 
       <Header />
-        <OpenEyes name="Scottchi"/>
 
-        <Switch>
-          <Route exact path="/">
-            <h1 className="font-bold text-2x1">This is the home page</h1>
-          </Route>
-          <Route path="/about">
-            <h1 className="font-bold text-2x1">About Page - Page</h1>
-          </Route>
-        </Switch>
+        <div className="p-3">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/products/:id">
+              <Product />
+            </Route>
+          </Switch>
+        </div>
 
         <Footer />
         

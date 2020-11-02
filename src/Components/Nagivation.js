@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
-import { Link } from "react-router-dom";
+import NavigationMenu from './NavigationMenu'
 
 function Nagivation() {
     const [showMenu, setShowMenu] = useState(false)
@@ -75,15 +75,9 @@ function Nagivation() {
                         style={props}
                         className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow p-3"
                     >
-                        <span className="font-bold">Menu</span>
-                        <ul>
-                            <li>
-                                <Link to="/" className="text-blue-500">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/about" className="text-blue-500">About</Link>
-                            </li>
-                        </ul>
+                    <NavigationMenu 
+                        closeMenu={() => setShowMenu(false)}
+                    />
                     </animated.div>
                 )
             }
