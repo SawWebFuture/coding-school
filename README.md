@@ -10,3 +10,6 @@ ReactJS Website built to demonstrate skills and help others develop theirs.
 
 https://guruscott.com/
 
+## TODO
+
+Turn this app into a responsive Flutter app with Dart.
